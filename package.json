@@ -1,0 +1,24 @@
+{
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.4",
+    "tailwindcss": "^3.3.3"
+  },
+  "name": "tailwind-learn",
+  "description": ":smile:",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "twc": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alizarazot/Tailwind-Learn.git"
+  },
+  "author": "alizarazot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alizarazot/Tailwind-Learn/issues"
+  },
+  "homepage": "https://github.com/alizarazot/Tailwind-Learn#readme"
+}
