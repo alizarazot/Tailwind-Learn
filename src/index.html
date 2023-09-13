@@ -5,15 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Profile Card</title>
   </head>
 
-  <body>
-    <div class="container mx-auto grid grid-cols-4 bg-orange-400">
-      <header class="col-span-4 h-10 bg-[#67ae3b]">El Encabezado...</header>
-      <nav class="h-[101px] bg-green-500">Opciones...</nav>
-      <article class="col-span-3 bg-purple-300">Contenido Section...</article>
-      <footer class="bg-pink-400 col-span-4">Pie de página...</footer>
+  <body class="grid h-screen place-items-center bg-slate-200">
+    <div class="w-64 rounded pt-4 text-center bg-white shadow-md">
+      <div class="relative inline-block">
+        <img
+          class="h-12 w-12 rounded-full"
+          src="https://images.unsplash.com/photo-1694046078505-7486ffcf88f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80"
+          alt=""
+        />
+        <div
+          class="absolute bottom-0 right-0 h-2 w-2 rounded-full bg-green-600"
+        ></div>
+      </div>
     </div>
+
+    <!-- IMG URL: https://www.behance.net/gallery/45207333/Profile-Card-Concept?locale=es_ES -->
   </body>
 </html>
