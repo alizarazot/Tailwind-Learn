@@ -5,33 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/27f7529e1d.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Profile Card</title>
   </head>
 
   <body class="grid h-screen select-none place-items-center bg-slate-200">
     <div
-      class="flex max-w-xs flex-col items-center rounded bg-white p-2 px-8 shadow-2xl"
+      class="relative flex max-w-xs flex-col items-center rounded bg-white p-2 px-8 shadow-2xl"
     >
-      <div class="relative mt-5 h-[100px] w-[100px]">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="absolute right-2 top-4 h-6 w-6 text-slate-700"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+        />
+      </svg>
+      <div class="relative mb-5 mt-7 h-[100px] w-[100px]">
         <div
           class="h-[100px] w-[100px] rounded-full [background-size:cover]"
           style="
             background-image: url(https://images.unsplash.com/photo-1694290124012-c1d19f091e5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60);
           "
         ></div>
-        <div class="absolute bottom-1 right-1 h-5 w-5 rounded-full bg-teal-500">
+        <div
+          class="absolute bottom-1 right-1 h-5 w-5 rounded-full bg-teal-500 ring-2 ring-teal-300 ring-opacity-50"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            stroke-width="4"
             stroke="currentColor"
-            class="text-white"
+            class="p-1 text-white"
           >
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              d="M4.5 12.75l6 6 9-13.5"
             />
           </svg>
         </div>
@@ -65,10 +86,21 @@
       </div>
 
       <!-- Social. -->
-      <div>Social</div>
+      <div class="my-12 flex w-full justify-evenly px-5">
+        <i
+          class="fa-brands fa-square-x-twitter fa-2xl"
+          style="color: #14171a"
+        ></i>
+        <i class="fa-brands fa-facebook fa-2xl" style="color: #3b5998"></i>
+        <i class="fa-brands fa-google-plus fa-2xl" style="color: #db4437"></i>
+        <i
+          class="fa-brands fa-square-behance fa-2xl"
+          style="color: #0057ff"
+        ></i>
+      </div>
 
       <button
-        class="m-9 rounded-full bg-teal-500 px-9 py-2 text-white shadow-lg transition-all hover:bg-teal-600 hover:shadow-xl active:scale-95"
+        class="mb-9 rounded-full bg-teal-500 px-9 py-2 text-white shadow-lg transition-all hover:bg-teal-600 hover:shadow-xl active:scale-95"
       >
         View Profile
       </button>
